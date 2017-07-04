@@ -24,9 +24,11 @@
 			<div class="customer-feedback-content clearfix">
 				<div class="owl-carousel owl-theme" id="owl-customer-feedback">
 					<?php
+					wp_reset_query();
 				    	$args = array(
 					        'posts_per_page' => -1,
 					        'post_type' => 'khach-hang-danh-gia',
+					        'lang' => pll_current_language(),
 					        'orderby' => 'date',
 							'order' => 'ASC'
 					    );

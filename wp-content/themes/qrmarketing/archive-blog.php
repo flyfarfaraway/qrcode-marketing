@@ -58,6 +58,7 @@ get_header(); ?>
 						$myquery = array(
 				                'paged'         => $paged, 
 				                'post_type' 	=> 'blog',
+				                'lang' => pll_current_language(),
 				                'order'         => $order_type_parse[1],
 				                'orderby'       => $order_type_parse[0],
 				                'post_type'     => 'blog',
@@ -124,6 +125,7 @@ get_header(); ?>
 							$terms = get_terms( array(
 							    'taxonomy' => 'category',
 							    'hide_empty' => false,
+							    'lang' => pll_current_language(),
 							    'orderby' => 'id',
 								'order' => 'ASC'
 							)); ?>

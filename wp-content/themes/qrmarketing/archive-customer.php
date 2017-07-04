@@ -60,6 +60,7 @@ get_header(); ?>
 				    	$args = array(
 					        'posts_per_page' => -1,
 					        'post_type' => 'partner',
+					        'lang' => pll_current_language(),
 					        'orderby' => 'date',
 							'order' => 'ASC'
 					    );
