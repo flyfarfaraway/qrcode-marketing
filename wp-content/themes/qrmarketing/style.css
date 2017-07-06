@@ -1478,7 +1478,7 @@ header .qr-btn-group {
     width: 100%;
     left: 0;
     z-index: 0;
-    padding-bottom: 9000px;
+    padding-bottom: 3000px;
     top: 0;
 }
 .content-2-column .column-2 {
@@ -1561,6 +1561,11 @@ header .qr-btn-group {
 	font-weight: 300;
 	font-size: 30px;
 	margin: 30px 0;
+}
+.archive-blog-custom h1.entry-title {
+	font-weight: 700;
+	text-align: center;
+	color: #0c829d;
 }
 .archive-blog-custom .archive-content .post-date {
 	font-size: 12px;
@@ -1919,7 +1924,6 @@ article.code-frame .qr-btn {
     padding: 0;
     margin: 10px 0;
     text-transform: uppercase;
-    padding-right: 25px;
 }
 .cooperation-tab .nav-tabs>li>a {
 	background: #ededee;
@@ -2355,9 +2359,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .site-footer .textwidget h3 {
 	color: #fe811f;
 	font-size: 12px;
-	font-weight: 700;
-	margin-bottom: 5px;
-    margin-top: 5px;
+	font-weight: 600;
 }
 .site-footer .widget-column.footer-widget-1 .widget_media_image, .site-footer .widget-column.footer-widget-1 .widget_text {
 	padding-bottom: 20px;
@@ -2829,7 +2831,7 @@ object {
 	    position: absolute;
 	    top: 19px;
 	    left: 20px;
-	    background: #00aeef;
+	    background: #0c829d;
 	    padding: 4px 8px;
 	    margin: 0;
 	    border-radius: 200px;

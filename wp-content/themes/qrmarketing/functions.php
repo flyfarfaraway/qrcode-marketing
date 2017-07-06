@@ -414,13 +414,15 @@ add_action( 'wp_head', 'twentyseventeen_colors_css_wrap' );
  * Enqueue scripts and styles.
  */
 function twentyseventeen_scripts() {
+	$themeVersion = wp_get_theme()->get('Version');
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
 	wp_enqueue_style( 'twentyseventeen-bootstrap', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), array(), null );
 	wp_enqueue_style( 'twentyseventeen-owl-carousel', get_theme_file_uri( '/assets/css/owl.carousel.min.css' ), array('twentyseventeen-style'), '1.0' );
 	wp_enqueue_style( 'twentyseventeen-lightbox', get_theme_file_uri( '/assets/css/lightbox.min.css' ), array('twentyseventeen-style'), '1.0' );
 	// Theme stylesheet.
-	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
+	wp_enqueue_style('twentyseventeen-style', get_stylesheet_directory_uri() . '/style.css',
+        array(), $themeVersion);
 
 
 	// Load the dark colorscheme.
