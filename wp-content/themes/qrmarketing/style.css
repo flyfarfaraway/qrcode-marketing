@@ -4,7 +4,7 @@ Theme URI: https://wordpress.org/themes/Qr_Marketing/
 Author: the WordPress team
 Author URI: https://wordpress.org/
 Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
-Version: 1.3
+Version: 1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: qrmarketing
@@ -1686,23 +1686,23 @@ article.code-frame .qr-btn {
 .archive-blog-custom .archive-content article .more-link {
 	display: none;
 }
-.archive-content .archive-pagination {
+.archive-pagination {
 	text-align: center;
 	margin: 20px 0;
 }
-.archive-content .archive-pagination a, .archive-content .archive-pagination span {
+.archive-pagination a, .archive-pagination span {
 	color: #00aeef;
 	font-weight: 400;
 	font-size: 14px;
 	padding: 0 10px;
 	position: relative;
 }
-.archive-content .archive-pagination .page-numbers::before, .archive-content .archive-pagination .first::before {
+.archive-pagination .page-numbers::before, .archive-pagination .first::before {
 	content: '|';
 	position: absolute;
 	right: -5px;
 }
-.archive-content .archive-pagination .current {
+.archive-pagination .current {
  	color: #636466;
 }
 .videoWrapper {
