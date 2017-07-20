@@ -51,12 +51,14 @@ function twentyseventeen_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	add_image_size( 'twentyseventeen-featured-image', 2000, 1200, true );
+	add_image_size( 'twentyseventeen-featured-image', 960, 640, true );
 
 	add_image_size( 'qrmarketing-thumbnail-avatar', 160, 160, true );
 	add_image_size( 'qrmarketing-thumbnail-gallery', 200, 200, true );
 	add_image_size( 'qrmarketing-thumbnail-gallery-large', 960, 640, true );
 	add_image_size( 'qrmarketing-thumbnail-tuyen-dung', 256, 164, true );
+	add_image_size( 'qrmarketing-thumbnail-blog', 180, 108, true );
+	add_image_size( 'qrmarketing-thumbnail-category', 300, 188, true );
 
 	// Set the default content width.
 	$GLOBALS['content_width'] = 525;
@@ -452,8 +454,8 @@ function twentyseventeen_scripts() {
 
 	if ( has_nav_menu( 'top' ) ) {
 		wp_enqueue_script( 'twentyseventeen-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.1', true );
-		$twentyseventeen_l10n['expand']         = __( 'Expand child menu', 'qrmarketing' );
-		$twentyseventeen_l10n['collapse']       = __( 'Collapse child menu', 'qrmarketing' );
+		$twentyseventeen_l10n['expand']         = __( '', 'qrmarketing' );
+		$twentyseventeen_l10n['collapse']       = __( '', 'qrmarketing' );
 		$twentyseventeen_l10n['icon']           = twentyseventeen_get_svg( array( 'icon' => 'angle-down', 'fallback' => true ) );
 	}
 

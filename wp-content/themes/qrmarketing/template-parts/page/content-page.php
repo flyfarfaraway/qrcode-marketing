@@ -27,4 +27,12 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+	<div class="post-footer">
+		<div class="button-like">
+			<div class="fb-like" data-href="<?php echo esc_url( get_permalink() ) ?>" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+		</div>
+		<div class="comment-box">
+			<div class="fb-comments" data-href="<?php echo esc_url( get_permalink() ) ?>" data-numposts="5"></div>
+		</div>
+	</div>
 </article><!-- #post-## -->

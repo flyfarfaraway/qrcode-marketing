@@ -24,8 +24,8 @@ Description: Used to style the TinyMCE editor.
 body {
 	background-color: #fff;
 	color: #333;
-	margin: 20px 40px;
-	max-width: 580px;
+	margin: 20px 0;
+	/*max-width: 580px;*/
 }
 
 /**
@@ -225,7 +225,7 @@ hr {
 ul,
 ol {
 	margin: 0 0 1.5em;
-	padding: 0;
+	/*padding: 0;*/
 }
 
 ul {

@@ -65,7 +65,20 @@
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
+<?php
+	$hotline = get_option('hotline'); ?>
+<div style="position:fixed;z-index:1000000;font-size:20px;bottom:5px;left:10px;padding:10px;background:orange;color:white;font-weight:bold;-moz-border-radius:10px;border-radius:10px;-webkit-border-radius:10px;"><a href="tel:<?php echo $hotline ?>" style="color:white;text-decoration:none;background: url('<?php echo get_theme_file_uri( '/assets/images/phone-icon.jpg' ) ?>') no-repeat left center; padding-left: 30px;height: 20px;display: block;line-height: 20px;"><span><?php echo sprintf("%s.%s.%s",substr($hotline,0,4),substr($hotline,4,3),substr($hotline,7,3)); ?></span></a></div>
 <?php wp_footer(); ?>
+<script type='text/javascript'>window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",67830]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-102505977-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

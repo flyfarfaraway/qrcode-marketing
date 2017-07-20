@@ -53,8 +53,8 @@
 					$trial_url = get_option('trial_url');
 				?>
 				<div class="qr-btn-group">
-					<a href="<?php echo $login_url ?>" class="qr-btn qr-btn-login">login</a>
-					<a href="<?php echo $trial_url ?>" class="qr-btn qr-btn-free-trial">free trial</a>
+					<a href="<?php echo $login_url ?>" class="qr-btn qr-btn-login">đăng nhập</a>
+					<a href="<?php echo $trial_url ?>" class="qr-btn qr-btn-free-trial">dùng thử</a>
 				</div>
 				<?php endif; ?>
 			</div>

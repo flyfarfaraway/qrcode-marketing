@@ -11,7 +11,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 	<?php
 	if ( is_sticky() && is_home() ) :
 		echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
@@ -44,36 +44,18 @@
 	</header><!-- .entry-header -->
 
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
-		<div class="post-thumbnail">
-			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
+			<a href="<?php the_permalink(); ?>" class="thumbnail-blog">
+				<?php the_post_thumbnail( 'qrmarketing-thumbnail-blog', array('class' => 'alignleft post-image entry-image') ); ?>
 			</a>
-		</div><!-- .post-thumbnail -->
+			
 	<?php endif; ?>
+	<?php 
+		$post_content = $post->post_content;
+		$post_content = strip_tags($post_content);
+		$post_content = mb_substr($post_content, 0,150);
 
-	<div class="entry-content">
-		<?php
-		/* translators: %s: Name of current post */
-		the_content( sprintf(
-			__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
-			get_the_title()
-		) );
-
-		wp_link_pages( array(
-			'before'      => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
-			'after'       => '</div>',
-			'link_before' => '<span class="page-number">',
-			'link_after'  => '</span>',
-		) );
 		?>
-	</div><!-- .entry-content -->
-	<div class="post-footer clearfix">
-		<div class="button-like">
-			<div class="fb-like" data-href="<?php echo esc_url( get_permalink() ) ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
-		</div>
-		<div class="comment-count">
-			Ý kiến (<fb:comments-count href="<?php echo get_permalink($post->ID); ?>"></fb:comments-count>)
-		</div>
-	</div>
-
+		<p>
+		<?php echo $post_content; ?>
+		</p>
 </article><!-- #post-## -->

@@ -34,7 +34,9 @@ get_header(); ?>
 
 			<div id="code-gallery-content">
 				<main role="main">
-
+				<div>
+				<?php global $query_string; // required
+				$posts = query_posts($query_string.'&posts_per_page=6&cat=-6,-9&order=ASC'); ?>
 				<?php
 				if ( have_posts() ) : ?>
 					<?php
@@ -57,7 +59,7 @@ get_header(); ?>
 					// get_template_part( 'template-parts/post/content', 'none' );
 
 				endif; ?>
-
+				</div>
 				</main><!-- #main -->
 			</div><!-- #primary -->
 		</div>
