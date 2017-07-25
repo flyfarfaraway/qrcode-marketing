@@ -57,8 +57,8 @@ function twentyseventeen_setup() {
 	add_image_size( 'qrmarketing-thumbnail-gallery', 200, 200, true );
 	add_image_size( 'qrmarketing-thumbnail-gallery-large', 960, 640, true );
 	add_image_size( 'qrmarketing-thumbnail-tuyen-dung', 256, 164, true );
-	add_image_size( 'qrmarketing-thumbnail-blog', 180, 108, true );
-	add_image_size( 'qrmarketing-thumbnail-category', 300, 188, true );
+	add_image_size( 'qrmarketing-thumbnail-blog', 180 );
+	add_image_size( 'qrmarketing-thumbnail-category', 300 );
 
 	// Set the default content width.
 	$GLOBALS['content_width'] = 525;

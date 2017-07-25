@@ -18,9 +18,6 @@
 	endif;
 	?>
 	<header class="entry-header">
-		<div class="post-date">
-		<?php echo sprintf("%s, %s", get_the_date('l', $post->ID), get_the_date('d/m/Y', $post->ID)); ?>
-		</div>
 		<?php
 		if ( 'post' === get_post_type() ) {
 			echo '<div class="entry-meta">';
@@ -52,7 +49,7 @@
 	<?php 
 		$post_content = $post->post_content;
 		$post_content = strip_tags($post_content);
-		$post_content = mb_substr($post_content, 0,150);
+		$post_content = mb_substr($post_content, 0,300);
 
 		?>
 		<p>

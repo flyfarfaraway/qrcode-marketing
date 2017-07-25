@@ -18,9 +18,6 @@
 	endif;
 	?>
 	<header class="entry-header">
-		<div class="post-date">
-		<?php echo sprintf("%s, %s", get_the_date('l', $post->ID), get_the_date('d/m/Y', $post->ID)); ?>
-		</div>
 		<?php
 		if ( 'post' === get_post_type() ) {
 			echo '<div class="entry-meta">';

@@ -215,6 +215,24 @@
 		if ( true === supportsFixedBackground() ) {
 			document.documentElement.className += ' background-fixed';
 		}
+
+		$('.thumbnail-category').each(function() {
+			var imageChild = $(this).children('img');
+			if (imageChild) {
+				var currentWidth = imageChild.attr('width'),
+				currentHeight = imageChild.attr('height'),
+				newWidth = 0,
+				newHeight = 0;
+				if (currentHeight/currentWidth >= 0.626) {
+					newWidth = 300;
+					newHeight = currentHeight/currentWidth * 300
+				} else {
+					newHeight = 188;
+					newWidth = currentWidth * 188 / currentHeight;
+				}
+				imageChild.css({width: newWidth, height: newHeight});
+			}
+		});
 	});
 
 	// If navigation menu is present on page, adjust it on scroll and screen resize.

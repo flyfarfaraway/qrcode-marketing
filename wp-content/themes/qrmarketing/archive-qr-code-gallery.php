@@ -36,7 +36,7 @@ get_header(); ?>
 				<main role="main">
 				<div>
 				<?php global $query_string; // required
-				$posts = query_posts($query_string.'&posts_per_page=6&cat=-6,-9&order=ASC'); ?>
+				$posts = query_posts($query_string.'&posts_per_page=24&cat=-6,-9&order=ASC'); ?>
 				<?php
 				if ( have_posts() ) : ?>
 					<?php

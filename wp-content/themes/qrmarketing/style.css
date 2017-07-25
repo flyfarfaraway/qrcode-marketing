@@ -4,7 +4,7 @@ Theme URI: https://wordpress.org/themes/Qr_Marketing/
 Author: the WordPress team
 Author URI: https://wordpress.org/
 Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
-Version: 1.5
+Version: 1.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: qrmarketing
@@ -1010,51 +1010,7 @@ dt {
 dd {
     margin: 0 1.5em 1.5em;
 }
-/**
- * 8.0 Alignments
- */
 
-.alignleft {
-    display: inline;
-    float: left;
-}
-
-.alignright {
-    display: inline;
-    float: right;
-}
-
-.aligncenter {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-blockquote.alignleft,
-.wp-caption.alignleft,
-img.alignleft {
-    margin: 0.4em 1.6em 1.6em 0;
-}
-
-blockquote.alignright,
-.wp-caption.alignright,
-img.alignright {
-    margin: 0.4em 0 1.6em 1.6em;
-}
-
-blockquote.aligncenter,
-.wp-caption.aligncenter,
-img.aligncenter {
-    clear: both;
-    margin-top: 0.4em;
-    margin-bottom: 1.6em;
-}
-
-.wp-caption.alignleft,
-.wp-caption.alignright,
-.wp-caption.aligncenter {
-    margin-bottom: 1.2em;
-}
 
 /*--------------------------------------------------------------
 9.0 Tables
@@ -2191,19 +2147,6 @@ article.code-frame .qr-btn {
     background: #FFFFFF;
     border-bottom: 0 none;
 }
-a.thumbnail-blog {
-    float: left;
-    width: 180px;
-    margin-right: 10px;
-}
-a.thumbnail-category {
-    float: left;
-    width: 300px;
-    margin-right: 24px;
-}
-a.thumbnail-category img.alignleft, a.thumbnail-blog img.alignleft {
-    margin-right: 0;
-}
 
 table.table-has-border-middle tr td:first-child {
     padding-right: 35px;
@@ -2458,9 +2401,6 @@ table.table-has-border-middle tr td:last-child {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
-}
-.main-navigation ul.menu > li.current-menu-parent > a, .main-navigation ul.menu > li.current-menu-ancestor > a, .main-navigation ul.menu > li.current-menu-item > a {
-    color: #fe811f;
 }
 
 .main-navigation a:hover {
@@ -3279,9 +3219,6 @@ object {
         margin-left: 0;
         left: 0;
     }
-    .site-footer {
-        padding-bottom: 30px;
-    }
     .site-footer .social-links-menu ul li {
         width: 32%;
         text-align: center;
@@ -3906,7 +3843,7 @@ object {
         margin-bottom: 4em;
     }
     .page:not(.home) #content {
-        /*padding-bottom: 3.25em;*/
+        padding-bottom: 3.25em;
     }
     /* 404 page */
     .error404 .page-content {
@@ -4180,24 +4117,178 @@ a:active {
     outline: none
 }
 
-ul>li>a:hover,
-a:focus,
-a:active {
+.menu-top-menu-container>ul>li>a:hover,
+.menu-top-menu-container>ul>li>a:focus,
+.menu-top-menu-container>ul>li>a:active {
     background-color: transparent !important;
     color: #ff801f !important
 }
 
-ul>li:hover {
+.menu-top-menu-container>ul>li:hover {
     background-color: transparent !important;
     color: #ff801f !important
 }
 
-.menu-item>a:hover {
+.menu-top-menu-container>.menu-item>a:hover {
     background-color: none;
     color: #ff801f;
 }
-.entry-content ul, .entry-content ol, .faq-content ul, .faq-content ol {
-    padding-left: 40px;
+
+.qr-btn:hover,
+.qr-btn:focus {
+    /* color: white; */
+    text-decoration: none;
+    opacity: 0.85
 }
 
+.btn-group>.qr-btn:hover,
+.btn-group>.qr-btn:focus {
+    color: white;
+}
+
+
 /*TESTfdbgdfgdfgdfggit*/
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+    border: none;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998 !important;
+}
+
+a.icoFacebook {
+    background-color: #3B5998 !important;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff !important;
+    opacity: 1;
+}
+
+a.icoTwitter {
+    background-color: #33ccff !important;
+}
+
+.social-network a.icoInstagram:hover {
+    background-color: #527fa4 !important;
+    opacity: 1;
+}
+
+a.icoInstagram {
+    background-color: #527fa4 !important;
+}
+
+
+/* .social-network a.icoGoogle:hover {
+    background-color: #BD3518 !important;
+    opacity: 1;
+}
+
+a.icoGoogle {
+    background-color: #BD3518 !important;
+}
+
+.social-network a.icoVimeo:hover {
+    background-color: #0590B8 !important;
+    opacity: 1;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7 !important;
+    opacity: 1;
+}
+
+a.icoLinkedin {
+    background-color: #007bb7 !important;
+} */
+
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    /* &.icoInstagram{
+    background-color: #527fa4;
+    color: #fff;
+    &:hover{
+        background: #527fa4;
+    } */
+    /* } */
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social-circle li a:hover,
+.triggeredHover {
+    opacity: 0.85;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+
+/* a {
+    background-color: #D3D3D3;
+} */
+
+.social {
+    margin: 0px 0 75px 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.hotline {
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
