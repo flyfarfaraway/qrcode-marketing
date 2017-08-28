@@ -58,7 +58,7 @@ function twentyseventeen_setup() {
 	add_image_size( 'qrmarketing-thumbnail-gallery-large', 960, 640, true );
 	add_image_size( 'qrmarketing-thumbnail-tuyen-dung', 256, 164, true );
 	add_image_size( 'qrmarketing-thumbnail-blog', 180 );
-	add_image_size( 'qrmarketing-thumbnail-category', 280 );
+	add_image_size( 'qrmarketing-thumbnail-category', 300 );
 
 	// Set the default content width.
 	$GLOBALS['content_width'] = 525;
@@ -902,12 +902,6 @@ function display_trial_element()
     	<input type="text" name="trial_url" id="trial_url" class="regular-text code" value="<?php echo get_option('trial_url'); ?>" />
     <?php
 }
-function display_create_qr_code_element()
-{
-	?>
-    	<input type="text" name="create_qr_code" id="create_qr_code" class="regular-text code" value="<?php echo get_option('create_qr_code'); ?>" />
-    <?php
-}
 
 function display_theme_panel_fields()
 {
@@ -920,7 +914,6 @@ function display_theme_panel_fields()
 	add_settings_field("instagram_url", "Link Instagram", "display_instagram_element", "theme-options", "section");
 	add_settings_field("login_url", "Link Login", "display_login_element", "theme-options", "section");
 	add_settings_field("trial_url", "Link Trial", "display_trial_element", "theme-options", "section");
-	add_settings_field("create_qr_code", "Create Qr Code", "display_create_qr_code_element", "theme-options", "section");
 
     register_setting("section", "facebook_app_id");
     register_setting("section", "youtube_url");
@@ -929,7 +922,6 @@ function display_theme_panel_fields()
     register_setting("section", "facebook_url");
     register_setting("section", "login_url");
     register_setting("section", "trial_url");
-    register_setting("section", "create_qr_code");
 }
 
 add_action("admin_init", "display_theme_panel_fields");

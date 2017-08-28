@@ -1012,53 +1012,6 @@ dd {
 }
 
 
-/**
-* 8.0 Alignments
-*/
-
-.alignleft {
-    display: inline;
-    float: left;
-}
-
-.alignright {
-    display: inline;
-    float: right;
-}
-
-.aligncenter {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-blockquote.alignleft,
-.wp-caption.alignleft,
-img.alignleft {
-    margin: 0.4em 1.6em 1.6em 0;
-}
-
-blockquote.alignright,
-.wp-caption.alignright,
-img.alignright {
-    margin: 0.4em 0 1.6em 1.6em;
-}
-
-blockquote.aligncenter,
-.wp-caption.aligncenter,
-img.aligncenter {
-    clear: both;
-    margin-top: 0.4em;
-    margin-bottom: 1.6em;
-}
-
-.wp-caption.alignleft,
-.wp-caption.alignright,
-.wp-caption.aligncenter {
-    margin-bottom: 1.2em;
-}
-
-
 /*--------------------------------------------------------------
 9.0 Tables
 --------------------------------------------------------------*/
@@ -1307,7 +1260,7 @@ header .qr-btn-group {
 }
 
 .qr-btn-big {
-    padding: 12px 30px;
+    padding: 12px 60px;
 }
 
 .qr-btn-block {
@@ -2385,45 +2338,6 @@ table.table-has-border-middle tr td:last-child {
     text-transform: none;
 }
 
-.thumbnail-category-border {
-    float: left;
-    width: 300px;
-    height: 188px;
-    border: 1px solid #636466;
-    margin-right: 24px;
-    padding: 10px;
-}
-
-a.thumbnail-blog {
-    float: left;
-    width: 180px;
-    margin-right: 10px;
-}
-
-a.thumbnail-category {
-    float: left;
-    width: 280px;
-    height: 168px;
-    position: relative;
-    overflow: hidden;
-}
-
-a.thumbnail-category img.alignleft,
-a.thumbnail-blog img.alignleft {
-    margin-right: 0;
-    max-width: none;
-}
-
-a.thumbnail-category img.alignleft {
-    position: absolute;
-}
-
-main-navigation ul.menu>li.current-menu-parent>a,
-.main-navigation ul.menu>li.current-menu-ancestor>a,
-.main-navigation ul.menu>li.current-menu-item>a {
-    color: #fe811f;
-}
-
 .site-footer .social-links-menu ul li {
     display: inline-block;
     padding-right: 30px;
@@ -2516,8 +2430,7 @@ main-navigation ul.menu>li.current-menu-parent>a,
 /* Display the menu toggle when JavaScript is available. */
 
 .feature {
-    /* background: #0c829d url('./assets/images/feature-bkg.jpg') no-repeat 50% 0; */
-    background-color: #0c829d;
+    background: #0c829d url('./assets/images/feature-bkg.jpg') no-repeat 50% 0;
     min-height: 450px;
 }
 
@@ -2666,7 +2579,8 @@ body {
 
 /* For browsers that support 'object-fit' */
 
-@supports ( object-fit: cover) {
+
+/* @supports ( object-fit: cover) {
     .has-header-image .custom-header-media img,
     .has-header-video .custom-header-media video,
     .has-header-video .custom-header-media iframe,
@@ -2682,7 +2596,7 @@ body {
         transform: none;
         width: 100%;
     }
-}
+} */
 
 
 /* Hides div in Customizer preview when header images or videos change. */
@@ -2703,7 +2617,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 .site-footer .textwidget h3 {
     color: #fe811f;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -2813,7 +2727,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 /* Footer widgets */
 
 .site-footer .widget-area {
-    padding-bottom: 0;
+    padding-bottom: 2em;
     padding-top: 25px;
 }
 
@@ -3305,9 +3219,6 @@ object {
         width: 100%;
         margin-left: 0;
         left: 0;
-    }
-    .site-footer {
-        padding-bottom: 30px;
     }
     .site-footer .social-links-menu ul li {
         width: 32%;
@@ -3933,7 +3844,7 @@ object {
         margin-bottom: 4em;
     }
     .page:not(.home) #content {
-        /*padding-bottom: 3.25em;*/
+        padding-bottom: 3.25em;
     }
     /* 404 page */
     .error404 .page-content {
@@ -4224,13 +4135,6 @@ a:active {
     color: #ff801f;
 }
 
-.entry-content ul,
-.entry-content ol,
-.faq-content ul,
-.faq-content ol {
-    padding-left: 40px;
-}
-
 .qr-btn:hover,
 .qr-btn:focus {
     /* color: white; */
@@ -4242,6 +4146,9 @@ a:active {
 .btn-group>.qr-btn:focus {
     color: white;
 }
+
+
+/*TESTfdbgdfgdfgdfggit*/
 
 ul.social-network {
     list-style: none;
@@ -4385,10 +4292,4 @@ a.socialIcon:hover,
     font-weight: bold;
     color: #fff;
     font-size: 14px;
-}
-
-.img-customer {
-    border: solid 1px;
-    padding: 10px;
-    height: 175px;
 }
