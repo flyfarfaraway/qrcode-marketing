@@ -1,0 +1,1 @@
+<?php die(); ?>{"headers":{"Content-Encoding":"Content-Encoding: gzip","Vary":"Vary: Accept-Encoding, Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Thu, 24 Aug 2017 08:43:53 GMT"},"uri":"qrcode-marketing.vn\/?fb_locale=en_GB","blog_id":1,"post":40,"key":"qrcode-marketing.vn80\/?fb_locale=en_GBgzip"}

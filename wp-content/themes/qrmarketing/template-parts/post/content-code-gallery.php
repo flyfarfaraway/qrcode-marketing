@@ -38,7 +38,7 @@
 
 		<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 			<div class="post-thumbnail">
-				<a class="example-image-link" data-title="<?php the_title() ?>" href="<?php the_post_thumbnail_url('qrmarketing-thumbnail-gallery-large') ?>" data-lightbox="example-set">
+				<a class="example-image-link" data-title="<?php the_title() ?>" title="<?php the_ID() ?>"  href="<?php the_post_thumbnail_url('qrmarketing-thumbnail-gallery-large') ?>" data-lightbox="example-set">
 					<?php the_post_thumbnail( 'qrmarketing-thumbnail-gallery' ); ?>
 				</a>
 			</div><!-- .post-thumbnail -->

@@ -36,7 +36,7 @@
 	</header><!-- .entry-header -->
 
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
-		<div class="post-thumbnail">
+		<div class="post-thumbnail img-customer">
 			<?php the_post_thumbnail( 'qrmarketing-thumbnail-avatar' ); ?>
 		</div><!-- .post-thumbnail -->
 	<?php endif; ?>

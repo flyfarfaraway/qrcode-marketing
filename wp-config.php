@@ -1,4 +1,6 @@
 <?php
+define( 'WPCACHEHOME', 'C:\inetpub\vhosts\qrcode-marketing.vn\httpdocs\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
+define('WP_AUTO_UPDATE_CORE', false);// This setting was defined by WordPress Toolkit to prevent WordPress auto-updates. Do not change it to avoid conflicts with the WordPress Toolkit auto-updates feature.
 /**
  * The base configuration for WordPress
  *
@@ -20,13 +22,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'congbeto_live');
+define('DB_NAME', 'qrcode-marketing_com_db');
 
 /** MySQL database username */
-define('DB_USER', 'congbeto_live');
+define('DB_USER', 'qrcod_db');
 
 /** MySQL database password */
-define('DB_PASSWORD', '5OKi{MTy**Rk');
+define('DB_PASSWORD', 'admin@123');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -86,6 +88,9 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 define("OTGS_DISABLE_AUTO_UPDATES", true);
+define("WPCACHEHOME", ABSPATH . '/wp-content/plugins/wp-super-cache/');
+define('WP_CACHE', true); // Added by W3 Total Cache
+define('COOKIE_DOMAIN', 'qrcode-marketing.com');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

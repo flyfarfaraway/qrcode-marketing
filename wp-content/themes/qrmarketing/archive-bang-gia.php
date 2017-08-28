@@ -24,7 +24,7 @@ get_header(); ?>
 		<div class="col-md-9 archive-blog-custom archive-bang-gia column-2">
 			<?php custom_breadcrumbs(); ?>
 			<?php
-				$login_url = get_option('login_url');
+				$create_qr_code = get_option('create_qr_code');
 				$trial_url = get_option('trial_url');
 			?>
 			<div class="registration-area">
@@ -32,7 +32,7 @@ get_header(); ?>
 					<div class="registration-border">
 						<p class="clearfix">
 							<span>Tạo mã QR tĩnh miễn phí, không cần đăng ký</span>
-							<a class="pull-right qr-btn qr-btn-info" href="<?php echo $login_url ?>">Tạo QR Code</a>
+							<a class="pull-right qr-btn qr-btn-info" href="<?php echo $create_qr_code ?>">Tạo QR Code</a>
 						</p>
 						<p class="clearfix">
 							<span>Tạo mã QR code động miễn phí 14 ngày với tài khoản dùng thử</span>

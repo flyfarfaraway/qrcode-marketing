@@ -85,12 +85,12 @@ get_header(); ?>
 										<div class="panel panel-default">
 									    	<div class="panel-heading" role="tab" id="headingOne">
 										      	<h4 class="panel-title">
-										       		<a class="<?php echo ($i == 0 ? '' : 'collapsed') ?>" role="button" data-toggle="collapse" data-parent="#accordion_<?php echo $term->term_id ?>" href="#post_id_<?php echo $post->ID ?>" aria-expanded="<?php echo ($i == 0 ? 'true' : 'false') ?>" aria-controls="post_id_<?php echo $post->ID ?>">
+										       		<a class="<?php echo ($i == 0 ? 'collapsed' : 'collapsed') ?>" role="button" data-toggle="collapse" data-parent="#accordion_<?php echo $term->term_id ?>" href="#post_id_<?php echo $post->ID ?>" aria-expanded="false" aria-controls="post_id_<?php echo $post->ID ?>">
 										          		<?php echo $post->post_title ?>
 										        	</a>
 										      	</h4>
 										    </div>
-										    <div id="post_id_<?php echo $post->ID ?>" class="panel-collapse collapse <?php echo ($i == 0 ? 'in' : '') ?>" role="tabpanel" aria-labelledby="headingOne">
+										    <div id="post_id_<?php echo $post->ID ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 										      	<div class="panel-body">
 										        	<?php echo $post->post_content ?>
 										      	</div>
@@ -106,7 +106,7 @@ get_header(); ?>
 							} ?>
 						</div>
 					</div>
-					<p>Nếu bạn không tìm thấy câu trả lời bạn cần. Hãy liên hệ với chúng tôi theo số máy <a href="tel:19001234">1900 1234</a> hoặc</p>
+					<p>Nếu bạn không tìm thấy câu trả lời bạn cần. Hãy liên hệ với chúng tôi theo số máy <a href="tel:0969059786">0969 059 786</a> hoặc</p>
 					<?php echo do_shortcode('[contact-form-7 id="162" title="Gửi câu hỏi" html_class="qr-contact-form"]'); ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->

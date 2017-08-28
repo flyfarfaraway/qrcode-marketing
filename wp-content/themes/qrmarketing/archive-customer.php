@@ -31,30 +31,23 @@ get_header(); ?>
 
 			<div id="customer-content">
 				<main role="main">
-				<h2>Khách hàng</h2>
+				<!-- <h2>Khách hàng</h2> -->
 					<?php
 					
-					if ( have_posts() ) : ?>
-						<?php
-						/* Start the Loop */
-						while ( have_posts() ) : the_post();
-							get_template_part( 'template-parts/post/content', 'customer' );
-							/*
-							 * Include the Post-Format-specific template for the content.
-							 * If you want to override this in a child theme, then include a file
-							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-							 */
+					// if ( have_posts() ) : 
+					// 	while ( have_posts() ) : the_post();
+					// 		get_template_part( 'template-parts/post/content', 'customer' );
 
-						endwhile;
+					// 	endwhile;
 
-						qr_marketing_show_pagination();
-						wp_reset_query();
-			            wp_reset_postdata();
-					else :
+					// 	qr_marketing_show_pagination();
+					// 	wp_reset_query();
+			  //           wp_reset_postdata();
+					// else :
 
-						// get_template_part( 'template-parts/post/content', 'none' );
 
-					endif; ?>
+					// endif; 
+				?>
 					<h2>Đối tác</h2>
 					<?php
 				    	$args = array(

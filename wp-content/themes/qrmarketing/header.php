@@ -15,10 +15,12 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
+<title>Công Cụ Tạo Mã Qr Code Trực Tuyến Miễn Phí Hàng Đầu - Mirascan</title>
+<meta name="description" content="Tự tạo các mẫu QR code được cá nhân hóa với giao diện đơn giản, dễ sử dụng, thống kê được số lượng quét theo ngày, tháng. Tạo Mã QR Code Ngay!">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
+<link rel="icon" type="image/x-icon" href="http://qrcode-marketing.vn/wp-content/themes/qrmarketing/assets/images/favicon.ico">
 <?php wp_head(); ?>
 </head>
 
@@ -53,8 +55,8 @@
 					$trial_url = get_option('trial_url');
 				?>
 				<div class="qr-btn-group">
-					<a href="<?php echo $login_url ?>" class="qr-btn qr-btn-login">login</a>
-					<a href="<?php echo $trial_url ?>" class="qr-btn qr-btn-free-trial">free trial</a>
+					<a href="<?php echo $login_url ?>" class="qr-btn qr-btn-login">đăng nhập</a>
+					<a href="<?php echo $trial_url ?>" class="qr-btn qr-btn-free-trial">dùng thử</a>
 				</div>
 				<?php endif; ?>
 			</div>
